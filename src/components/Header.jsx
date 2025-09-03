@@ -25,7 +25,7 @@ function Header() {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1,color:'black',fontSize:'30px',fontFamily:'"Berkshire Swash", serif' }}>
                             Kontact
                         </Typography>
-                       <Button variant="contained" style={{backgroundColor:'rgb(81, 33, 225)'}}>Contained</Button>
+                       <Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>contacts</Button>
                        
                     </Toolbar>
                 </AppBar>
