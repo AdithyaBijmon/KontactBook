@@ -1,0 +1,19 @@
+*{
+   font-family: "Arvo", serif;
+}
+
+/* .landingImage{
+  position: relative;
+}
+
+.bgdark{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.57);
+  height: 90vh;
+  width: 100%;
+} */
+
+
+#btnbg{
+  background-color: rgb(81, 33, 225);
+}
