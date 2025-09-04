@@ -23,6 +23,10 @@
 #btnbg{
   background-color: rgb(81, 33, 225);
 }
+.about-img{
+  display: flex;
+  width: 500px;
+}
 
 @media(max-width: 792px){
   .main-heading{
@@ -31,5 +35,9 @@
   }
   .first-section{
     height: 70vh;
+  }
+  .about-img{
+    display: none;
+    width: 300px;
   }
 }
