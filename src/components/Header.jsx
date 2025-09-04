@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import '../index.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -22,8 +23,8 @@ function Header() {
                         >
                             
                         </IconButton>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1,color:'black',fontSize:'30px',fontFamily:'"Berkshire Swash", serif' }}>
-                            Kontact
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1,color:'black',fontSize:'30px'}}>
+                           <Link to={'/'} style={{textDecoration:'none',fontFamily:'"Berkshire Swash", serif',color:'black'}}> Kontact</Link>
                         </Typography>
                        <Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>contacts</Button>
                        
