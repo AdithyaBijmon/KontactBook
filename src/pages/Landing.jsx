@@ -63,8 +63,8 @@ function Landing() {
 
 
 
-                <Box sx={{ flexGrow: 1 , margin:'60px 0px'}} >
-                    <Grid container spacing={12}>
+                <Box sx={{ flexGrow: 1 }} className='startnow' >
+                    <Grid container spacing={10}>
                         <Grid size={1}>
 
                         </Grid>

@@ -28,6 +28,31 @@
   width: 500px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(129, 99, 218, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.startnow{
+  margin: 60px 0px;
+}
+
+
 @media(max-width: 792px){
   .main-heading{
     font-size: 50px;
@@ -40,4 +65,8 @@
     display: none;
     width: 300px;
   }
+  .startnow{
+    margin: 10px 0px;
+  }
+  
 }
