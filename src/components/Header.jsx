@@ -26,7 +26,7 @@ function Header() {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1,color:'black',fontSize:'30px'}}>
                            <Link to={'/'} style={{textDecoration:'none',fontFamily:'"Berkshire Swash", serif',color:'black'}}> Kontact</Link>
                         </Typography>
-                       <Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>contacts</Button>
+                      <Link to={'/contacts'}> <Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>contacts</Button></Link>
                        
                     </Toolbar>
                 </AppBar>

@@ -72,7 +72,7 @@ function Landing() {
                             <Paper className='d-flex justify-content-center align-items-center flex-column' elevation={3} sx={{ width: '75%', height: '250px', padding: '30px',textAlign:'center' }}>
                                 <h2 style={{color:'rgba(96, 57, 214, 1)'}}>New Contact</h2>
                                 <p >Simply fill out the fields to securely add a new contact to your list.</p>
-                                <Button variant="outlined" style={{borderColor:'rgba(98, 58, 220, 1)',color:'rgba(96, 57, 214, 1)'}}>Add contact</Button>
+                                <Link to={'/newContact'}><Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>Add contact</Button></Link>
                             </Paper>
                         </Grid>
                         
@@ -80,7 +80,7 @@ function Landing() {
                             <Paper className='d-flex justify-content-center align-items-center flex-column' elevation={3} sx={{ width: '75%', height: '250px', padding: '30px',textAlign:'center' }}>
                                   <h2 style={{color:'rgba(96, 57, 214, 1)'}}>Your Contacts</h2>
                                 <p >Access your entire contact network here.</p>
-                                <Button variant="outlined" style={{borderColor:'rgba(98, 58, 220, 1)',color:'rgba(96, 57, 214, 1)'}}>All contact</Button>
+                                <Link to={'/contacts'}><Button variant="contained" style={{backgroundColor:'rgba(129, 99, 218, 1)'}}>All contact</Button></Link>
                             </Paper>
                         </Grid>
                         <Grid size={1}>
