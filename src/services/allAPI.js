@@ -10,5 +10,9 @@ export const addContactAPI = async (contacts) => {
 export const getContactAPI = async () => {
     return await commonAPI("GET", `${BASEURL}/allContacts`, {})
 
+}
 
+export const deleteContactAPI = async (id) => {
+    return await commonAPI("DELETE", `${BASEURL}/allContacts/${id}`, {})
+ 
 }
