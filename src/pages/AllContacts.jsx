@@ -19,7 +19,7 @@ function AllContacts() {
             alt="" 
             width={70} 
             height={70} 
-          />
+          /> 
           <div className='ms-sm-5 mt-3 mt-sm-0 text-center text-sm-start'>
             <h6>Name: <span className='fw-bold'>John Smith</span></h6>
             <h6>Phone number: <span className='text-success fw-semibold'>8767564534</span></h6>
