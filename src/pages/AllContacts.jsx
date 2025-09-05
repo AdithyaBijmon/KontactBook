@@ -10,15 +10,16 @@ import Swal from 'sweetalert2'
 function AllContacts() {
   const [contacts, setContacts] = useState([])
   const [isEditing, setIsEditing] = useState(false);
+  const [contactId,setContactId] = useState(null)
 
 
   useEffect(() => {
-    getContacts()
+   getContacts()
   }, [])
 
   useEffect(() => {
-    getEditContactDetails()
-  })
+   getEditContactDetails()
+  },[])
 
   const getContacts = async () => {
     try {
@@ -58,6 +59,7 @@ function AllContacts() {
   const handleUpdateContact = async () => {
     try {
       const result = await editContactAPI(contacts?.id, contacts)
+      setContacts(result?.data)
     }
     catch (err) {
       console.log(err)
@@ -67,7 +69,7 @@ function AllContacts() {
 
   const getEditContactDetails = async () => {
     try {
-      const result = await getUpdateContactAPI(contacts?.id)
+      const result = await getUpdateContactAPI(contactId)
       setContacts(result?.data)
     }
     catch (err) {
@@ -101,11 +103,11 @@ function AllContacts() {
                     </div>
                     <div className='d-flex align-items-center justify-content center mt-2'>
                       <h6>Phone:</h6>
-                      <input type="text" className='form-control ms-2' style={{ height: '30px' }} />
+                      <input type="text" onChange={e => setContacts({ ...contacts, phone: e.target.value })} className='form-control ms-2' style={{ height: '30px' }} />
                     </div>
                     <div className='d-flex align-items-center justify-content center mt-2'>
                       <h6>Email:</h6>
-                      <input type="text" className='form-control ms-2' style={{ height: '30px' }} />
+                      <input type="text" onChange={e => setContacts({ ...contacts, email: e.target.value })} className='form-control ms-2' style={{ height: '30px' }} />
                     </div>
 
 
@@ -142,7 +144,7 @@ function AllContacts() {
 
                   {/* Action Buttons Section */}
                   <div className='d-flex align-items-center justify-content-between mt-3 mt-md-0'>
-                    <Button onClick={() => setIsEditing(true)}> <MdEdit className='fs-3 text-primary' /> </Button>
+                    <Button onClick={() => {setIsEditing(true);setContactId(con?.id)}}> <MdEdit className='fs-3 text-primary' /> </Button>
                     <Button onClick={() => handleDeleteContact(con?.id)}> <MdDelete className='fs-3 text-danger' /> </Button>
                   </div>
                 </div>
