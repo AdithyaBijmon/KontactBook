@@ -78,7 +78,7 @@ function NewContact() {
           <InputLabel htmlFor="name">
             Name
           </InputLabel>
-          <Input onChange={(e) => setContactInput({ ...contactInput, name: e.target.value })} value={contactInput.name}
+          <Input required  onChange={(e) => setContactInput({ ...contactInput, name: e.target.value })} value={contactInput.name}
             id="name"
             startAdornment={
               <InputAdornment position="start">
@@ -92,7 +92,7 @@ function NewContact() {
           <InputLabel htmlFor="phone">
             Phone number
           </InputLabel>
-          <Input onChange={(e) => setContactInput({ ...contactInput, phone: e.target.value })} value={contactInput.phone}
+          <Input required onChange={(e) => setContactInput({ ...contactInput, phone: e.target.value })} value={contactInput.phone}
             id="phone"
             startAdornment={
               <InputAdornment position="start">
@@ -105,7 +105,7 @@ function NewContact() {
           <InputLabel htmlFor="email">
             Email
           </InputLabel>
-          <Input onChange={(e) => setContactInput({ ...contactInput, email: e.target.value })} value={contactInput.email}
+          <Input required onChange={(e) => setContactInput({ ...contactInput, email: e.target.value })} value={contactInput.email}
             id="email"
             startAdornment={
               <InputAdornment position="start">
