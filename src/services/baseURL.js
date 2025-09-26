@@ -1,3 +1,3 @@
-const BASEURL = "http://localhost:3000"
+const BASEURL = "https://kontactappserver.onrender.com"
 
 export default BASEURL
